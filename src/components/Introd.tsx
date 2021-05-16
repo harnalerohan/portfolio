@@ -15,7 +15,7 @@ const Introd = ({bgStatus}: any) => {
  useEffect(() => {
   setTimeout(() => {
   setclasss(!classs)
-  setName(!name)
+  setName(!classs)
   }, 2000);
  }, [classs]);
 
