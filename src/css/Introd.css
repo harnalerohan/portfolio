@@ -32,16 +32,24 @@
 .intro{
   font-family: "poppins", "sans-serif";
   color: black;
-  padding: 130px 0px 0px 30px
+  padding: 130px 0px 0px 30px;  
 } 
 
 .intro h1{
   width: 100%;
-  transition: all 1s ease;
 }
 
 .name{
   color:#6c63ff;
+  transition: opacity 1s ease-in
+}
+
+.fadeIn{
+  opacity: 0;
+}
+
+.fadeOut{
+  opacity: 1;
 }
 
 @media screen and (max-width: 1024px) {
