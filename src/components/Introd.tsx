@@ -10,7 +10,7 @@ const Introd = ({bgStatus}: any) => {
  /*useEffect(() => {
   setTimeout(() => {
   }, 3400);
- }, []);*/
+ });*/
 
  useEffect(() => {
   setTimeout(() => {
