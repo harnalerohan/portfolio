@@ -7,10 +7,10 @@ const Introd = ({bgStatus}: any) => {
  let [name, setName] = useState(true);
  let [classs, setclasss] = useState(true)
 
- useEffect(() => {
+ /*useEffect(() => {
   setTimeout(() => {
   }, 3400);
- }, []);
+ }, []);*/
 
  useEffect(() => {
   setTimeout(() => {
@@ -18,10 +18,6 @@ const Introd = ({bgStatus}: any) => {
   setName(!name)
   }, 2000);
  }, [classs]);
-
- const handleChange = () => {
-  setclasss(!classs)
- }
 
   return (
     <div className={bgStatus ? "envelopedBlack" : "envelope"}>
