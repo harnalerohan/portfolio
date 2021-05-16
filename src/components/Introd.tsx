@@ -9,7 +9,7 @@ const Introd = ({bgStatus}: any) => {
  useEffect(() => {
   setTimeout(() => {
     setName(!name)
-   }, 2000);
+  }, 2000);
  }, [name]);
 
   return (

@@ -35,9 +35,6 @@ const NavBar = ({handleBackground = (f: any) => f}) => {
       <div className="logo">
         <h4 style={{color: "#6c63ff"}}>Rohan</h4>
       </div>
-      <div>
-        <p>.</p>
-      </div>
       <ul className={click ? "nav-links nav-active" : "nav-links"}>
         <li>
           <a style={{color: background ? "white" : "black"}} href="#Projects">Projects</a>
