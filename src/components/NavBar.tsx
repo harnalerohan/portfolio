@@ -35,6 +35,9 @@ const NavBar = ({handleBackground = (f: any) => f}) => {
       <div className="logo">
         <h4 style={{color: "#6c63ff"}}>Rohan</h4>
       </div>
+      <div>
+        <p>.</p>
+      </div>
       <ul className={click ? "nav-links nav-active" : "nav-links"}>
         <li>
           <a style={{color: background ? "white" : "black"}} href="#Projects">Projects</a>
@@ -47,9 +50,9 @@ const NavBar = ({handleBackground = (f: any) => f}) => {
         </li>
       </ul>
       <div className="burger" onClick={handleClick}>
-        <div className="line1"></div>
-        <div className="line2"></div>
-        <div className="line3"></div>
+        <div style={{backgroundColor: background ? "white" : "black"}} className="line1"></div>
+        <div style={{backgroundColor: background ? "white" : "black"}} className="line2"></div>
+        <div style={{backgroundColor: background ? "white" : "black"}} className="line3"></div>
       </div>
       <div className="colorMode">
         <i style={{color: background ? "white" : "black"}} onClick={managaBackground} className={background ? "fas fa-sun fa-lg" : "fas fa-moon fa-lg"}></i>

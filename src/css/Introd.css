@@ -6,6 +6,11 @@
   width: 65%;
   display: flex;
   justify-content: space-between;
+  transition: all 1s ease;
+}
+
+.fas{
+  transition: all 10s ease;
 }
 
 .envelopedBlack{
@@ -16,6 +21,7 @@
   width: 65%;
   display: flex;
   justify-content: space-between;
+  transition: all 1s ease;
 }
 
 .devGuy img{
@@ -35,21 +41,7 @@
 
 .name{
   color:#6c63ff;
-}
-
-.toggle{
-  animation: fadeout;
-}
-
-@keyframes fadeout{
-  0%{
-    opacity: 0;
-    transform: scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
+  transition: all 0.2s ease-in;
 }
 
 @media screen and (max-width: 1024px) {
