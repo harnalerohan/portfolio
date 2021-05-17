@@ -7,16 +7,18 @@ const Introd = ({bgStatus}: any) => {
  let [name, setName] = useState(true);
  let [classs, setclasss] = useState(true)
 
- /*useEffect(() => {
-  setTimeout(() => {
-  }, 3400);
- });*/
+//  useEffect(() => {
+//   setTimeout(() => {
+//     setName(!name)
+//   }, 2000);
+//  }, [classs]);
 
  useEffect(() => {
   setTimeout(() => {
-  setclasss(!classs)
-  setName(!classs)
+    setclasss(!classs)
+    setName(!name)
   }, 2000);
+  //eslint-disable-next-line react-hooks/exhaustive-deps
  }, [classs]);
 
   return (
