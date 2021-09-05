@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  font-family: "Poppins", "sans-serif";
-}
-
 .transition{
   transition: all 1s ease;
 }
@@ -34,7 +26,7 @@ nav {
   color: black;
   transition: all 1s ease;
   letter-spacing: 3px;
-  font-size: 22px;
+  font-size: 20px;
   float: left;
   font-weight: 600;
 }
@@ -46,14 +38,13 @@ nav {
 @media screen and (max-width: 525px) {
   .fa-moon {
     font-size: x-large;
-    margin-left: 0px;
+    margin-right: 30px;
     color: black;
     transition: all 12s ease;
   }
 
   .fa-sun {
     font-size: x-large;
-    margin-left: 0px;
     color: white;
     transition: all 12s ease;
   }

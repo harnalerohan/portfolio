@@ -17,20 +17,20 @@ const Introd = ({ bgStatus }: any) => {
 
   return (
     <div className={bgStatus ? "row envelopedBlack" : "row envelope"}>
-      <div className="intro col-lg-6 text-lg-left pl-5">
+      <div className="intro col-lg-6 text-lg-center">
         <p className={bgStatus ? "whiteText" : "blackText"}>
           Welcome to my portfolio...
         </p>
-        <h1>
+        <h3>
           <span className={bgStatus ? "whiteText" : "blackText"}>
             Hello I am{" "}
           </span>
           <span className={classs ? "name fadeIn" : "name fadeOut"}>
             {name ? "Rohan Harnale" : "Web Developer"}
           </span>
-        </h1>
+        </h3>
       </div>
-      <div className="devGuy col-lg-6 text-center pr-5">
+      <div className="devGuy col-lg-6 text-center pb-5">
         <img src={logo} alt="devGuy" />
       </div>
     </div>

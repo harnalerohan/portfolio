@@ -1,6 +1,6 @@
 .envelope{
   background-color: white;
-  height: auto;
+  /* height: auto; */
   margin: 0px auto 0px auto;
   padding: 20px 0px 0px 0px;
   justify-content: space-between;
@@ -9,7 +9,7 @@
 
 .envelopedBlack{
   background-color: #212529;
-  height: auto;
+  /* height: auto; */
   margin: 0px auto 0px auto;
   padding: 20px 0px 0px 0px;
   justify-content: space-between;
@@ -30,18 +30,17 @@
   transition: all 10s ease;
 }
 .devGuy img{
-  height: 20rem;
-  width: 29rem;
+  width: 95%;
 }
 
 .intro{
   font-family: "poppins", "sans-serif";
   color: black;
-  padding-top: 130px;
+  padding-top: 10%
 } 
 
-.intro h1{
-  width: 100%;
+.intro h3{
+  /* width: 100%; */
   font-weight: 600;
   font-size: 30px;
 }
@@ -57,4 +56,19 @@
 
 .fadeOut{
   opacity: 1;
+}
+
+@media screen and (max-width: 525px) {
+  .intro p{
+    text-align: center;
+  }
+  .intro h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .devGuy img{
+    width: 95%;
+    padding-top: 10%;
+  }
 }
