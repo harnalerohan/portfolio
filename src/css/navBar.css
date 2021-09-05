@@ -46,6 +46,7 @@
   .fa-sun {
     font-size: x-large;
     color: white;
+    margin-right: 30px;
     transition: all 12s ease;
   }
 }
