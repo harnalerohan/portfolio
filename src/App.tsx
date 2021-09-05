@@ -10,7 +10,7 @@ function App() {
   }
   
   return (
-  <div style={{backgroundColor: status ? "black" : "white", transition: "all 1s ease"}}>
+    <div style={{ backgroundColor: status ? "black" : "white"}} className="container">
       <NavBar handleBackground={handleStatus}/>
       <Introd bgStatus = {status}/>
     </div>

@@ -1,58 +1,44 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/navBar.css";
 
-const NavBar = ({handleBackground = (f: any) => f}) => {
-
-  let [click, setClick] = useState(false);
-  let [background, setBackground] = useState(false);
-
-  const managaBackground = () => {
-    setBackground(!background)
-    handleBackground(background)
-  }
-
-  const handleClick = () => {
-    check()
-    setClick(!click)
-  }
-
-  const check = () => {
-    let navLinks = document.querySelectorAll('.nav-links li')
-    navLinks.forEach((link: any, index) => {
-      if(link.style.animation){
-        link.style.animation = ""
-      }else{
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index/7 + 0.3}s`
-      }
-    });
-
-    let burger: any = document.querySelector('.burger');
-    burger.classList.toggle('toggle')    
-  }
+const NavBar = ({ handleBackground = (f: any) => f }) => {
 
   return (
-    <nav className={background ? "envelopedBlack" : "envelope"}>
-      <div className="logo">
-        <h4 style={{color: "#6c63ff"}}>Rohan</h4>
-      </div>
-      <ul className={click ? "nav-links nav-active" : "nav-links"}>
-        <li>
-          <a style={{color: background ? "white" : "black"}} href="#Projects">Projects</a>
-        </li>
-        <li>
-          <a style={{color: background ? "white" : "black"}} href="#Resume">Resume</a>
-        </li>
-        <li>
-          <a style={{color: background ? "white" : "black"}} href="#Skills">Skills</a>
-        </li>
-      </ul>
-      <div className="burger" onClick={handleClick}>
-        <div style={{backgroundColor: background ? "white" : "black"}} className="line1"></div>
-        <div style={{backgroundColor: background ? "white" : "black"}} className="line2"></div>
-        <div style={{backgroundColor: background ? "white" : "black"}} className="line3"></div>
-      </div>
-      <div className="colorMode">
-        <i style={{color: background ? "white" : "black"}} onClick={managaBackground} className={background ? "fas fa-sun fa-lg" : "fas fa-moon fa-lg"}></i>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <a className="navbar-brand logo" href="/">
+          ROHAN
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/">
+                Projects
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/">
+                Testemonials
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/"> 
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   );
