@@ -17,12 +17,12 @@ const Introd = ({ bgStatus }: any) => {
 
   return (
     <div className={bgStatus ? "row envelopedBlack" : "row envelope"}>
-      <div className="intro col-lg-6 text-lg-left">
-        <p style={{ color: bgStatus ? "white" : "black"}}>
+      <div className="intro col-lg-6 text-lg-left pl-5">
+        <p className={bgStatus ? "whiteText" : "blackText"}>
           Welcome to my portfolio...
         </p>
         <h1>
-          <span style={{ color: bgStatus ? "white" : "black" }}>
+          <span className={bgStatus ? "whiteText" : "blackText"}>
             Hello I am{" "}
           </span>
           <span className={classs ? "name fadeIn" : "name fadeOut"}>
@@ -30,7 +30,7 @@ const Introd = ({ bgStatus }: any) => {
           </span>
         </h1>
       </div>
-      <div className="devGuy col-lg-6 text-center">
+      <div className="devGuy col-lg-6 text-center pr-5">
         <img src={logo} alt="devGuy" />
       </div>
     </div>

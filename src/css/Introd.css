@@ -7,12 +7,8 @@
   transition: all 1s ease;
 }
 
-.fas{
-  transition: all 10s ease;
-}
-
 .envelopedBlack{
-  background-color: black;
+  background-color: #212529;
   height: auto;
   margin: 0px auto 0px auto;
   padding: 20px 0px 0px 0px;
@@ -20,14 +16,22 @@
   transition: all 1s ease;
 }
 
+.whiteText{
+  color: white;
+  transition: all 1s ease;
+}
+
+.blackText{
+  color: #212529;
+  transition: all 1s ease;
+}
+
+.fas{
+  transition: all 10s ease;
+}
 .devGuy img{
   height: 20rem;
   width: 29rem;
-}
-
-.devGuy{
-  /* padding: 0px auto 0px auto;
-  width: 44%; */
 }
 
 .intro{
@@ -54,19 +58,3 @@
 .fadeOut{
   opacity: 1;
 }
-
-/* @media screen and (max-width: 1024px) {
-  .envelope{
-    text-align: center;
-    width: 100%;
-    display: block;
-  }
-  .envelopedBlack{
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-  .intro{
-    padding-top: 10px;
-  } 
-} */

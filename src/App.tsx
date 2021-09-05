@@ -10,8 +10,8 @@ function App() {
   }
   
   return (
-    <div style={{ backgroundColor: status ? "black" : "white"}} className="container">
-      <NavBar handleBackground={handleStatus}/>
+    <div className={status ? "container envelopedBlack" : "container envelope"}>
+      <NavBar bgStatus={status} handleBackground={handleStatus}/>
       <Introd bgStatus = {status}/>
     </div>
   );

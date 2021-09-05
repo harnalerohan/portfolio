@@ -1,11 +1,11 @@
 import React from "react";
 import "../css/navBar.css";
 
-const NavBar = ({ handleBackground = (f: any) => f }) => {
-
+const NavBar = ({bgStatus, handleBackground = (f: any) => f }:any) => {
+  console.log("handleBackground", handleBackground)
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
+    <nav className={`navbar navbar-expand-lg navbar-${bgStatus ? 'dark transition' : 'light transition'} bg-${bgStatus ? 'dark' : 'light'}`}>
+      <div className="container">
         <a className="navbar-brand logo" href="/">
           ROHAN
         </a>
@@ -34,7 +34,12 @@ const NavBar = ({ handleBackground = (f: any) => f }) => {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/"> 
-                Contact Us
+                Contact Me
+              </a>
+            </li>
+            <li className="nav-item ">
+              <a className="nav-link" style={{color: "white"}}> 
+                <i className={bgStatus ? "far fa-sun" : "far fa-moon"} onClick={handleBackground}></i>
               </a>
             </li>
           </ul>
