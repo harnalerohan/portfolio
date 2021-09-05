@@ -18,27 +18,43 @@ nav {
 
 .fa-moon {
   font-size: x-large;
-  margin-left: 550px;
+  margin: 0px;
   color: black;
   transition: all 12s ease;
 }
 
 .fa-sun {
   font-size: x-large;
-  margin-left: 550px;
+  margin: 0px;
   color: white;
   transition: all 12s ease;
 }
 
-.logo {
+.navbar-brand {
   color: black;
   transition: all 1s ease;
   letter-spacing: 3px;
-  font-size: 20px;
+  font-size: 1000px;
   float: left;
   font-weight: 600;
 }
 
 .nav-link{
   transition: all 1s ease;
+}
+
+@media screen and (max-width: 525px) {
+  .fa-moon {
+    font-size: x-large;
+    margin-left: 0px;
+    color: black;
+    transition: all 12s ease;
+  }
+
+  .fa-sun {
+    font-size: x-large;
+    margin-left: 0px;
+    color: white;
+    transition: all 12s ease;
+  }
 }
