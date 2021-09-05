@@ -3,8 +3,8 @@ import "../css/navBar.css";
 
 const NavBar = ({bgStatus, handleBackground = (f: any) => f }:any) => {
   return (
+    <div className="container">
     <nav className={`ml-auto navbar navbar-expand-lg navbar-${bgStatus ? 'dark transition' : 'light transition'} bg-${bgStatus ? 'dark' : 'light'}`}>
-      <div className="container">
         <a className="navbar-brand logo" href="/">
           ROHAN
         </a>
@@ -41,8 +41,8 @@ const NavBar = ({bgStatus, handleBackground = (f: any) => f }:any) => {
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 };
 

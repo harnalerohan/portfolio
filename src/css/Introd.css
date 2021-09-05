@@ -31,6 +31,7 @@
 }
 .devGuy img{
   width: 95%;
+  padding-top: 6%;
 }
 
 .intro{
@@ -59,12 +60,13 @@
 }
 
 @media screen and (max-width: 525px) {
-  .intro p{
+  .intro {
     text-align: center;
   }
+  .description {
+    display: none;
+  }
   .intro h3{
-    text-align: center;
-    font-weight: 600;
     font-size: 20px;
   }
   .devGuy img{

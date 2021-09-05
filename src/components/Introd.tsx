@@ -16,23 +16,30 @@ const Introd = ({ bgStatus }: any) => {
   }, [classs]);
 
   return (
+    <div className="container mb-5">
     <div className={bgStatus ? "row envelopedBlack" : "row envelope"}>
-      <div className="intro col-lg-6 text-lg-center">
-        <p className={bgStatus ? "whiteText" : "blackText"}>
-          Welcome to my portfolio...
-        </p>
-        <h3>
-          <span className={bgStatus ? "whiteText" : "blackText"}>
-            Hello I am{" "}
-          </span>
-          <span className={classs ? "name fadeIn" : "name fadeOut"}>
-            {name ? "Rohan Harnale" : "Web Developer"}
-          </span>
-        </h3>
+      <div className="intro col-lg-6 text-lg">
+        <div className={bgStatus ? "whiteText" : "blackText"}>
+          <p>
+            Welcome to my portfolio...
+          </p>
+          <h3>
+            <span>
+              Hey folks I'm {" "}
+            </span>
+            <span className={classs ? "name fadeIn" : "name fadeOut"}>
+              {name ? "Rohan Harnale" : "Web Developer"}
+            </span>
+          </h3>
+          <p className="description">Building a succesful product is a challenge, I am highly energetic
+            in web development.
+          </p>
+        </div>
       </div>
       <div className="devGuy col-lg-6 text-center pb-5">
         <img src={logo} alt="devGuy" />
       </div>
+    </div>
     </div>
   );
 };

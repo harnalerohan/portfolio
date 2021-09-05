@@ -1,0 +1,10 @@
+.one{
+  text-align: center;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 525px) {
+  .one{
+    font-size: 20px;
+  }
+}
