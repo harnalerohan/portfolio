@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../css/Introd.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "../images/devGuy.svg";
 
 const Introd = ({ bgStatus }: any) => {

@@ -1,10 +1,58 @@
 .one{
-  text-align: center;
+  /* text-align: left; */
   font-weight: 600;
+}
+
+.flex-corousel{
+  display: flex;
+}
+
+.left-arrow{
+  height: 100%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+.right-arrow{
+  height: 100%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+.fa-arrow-left{
+  font-size: 200%;
+  margin-right: 40px;
+  color: #6c63ff;
+}
+
+.fa-arrow-right{
+  font-size: 200%;
+  margin-left: 40px;
+  color: #6c63ff
 }
 
 @media screen and (max-width: 525px) {
   .one{
     font-size: 20px;
+  }
+
+  .left-arrow{
+    margin-left: 0rem;
+  }
+  
+  .right-arrow{
+    margin-right: 0rem;
+  }
+
+  .fa-arrow-left{
+    font-size: 100%;
+    margin-right: 10px;
+  }
+  
+  .fa-arrow-right{
+    font-size: 100%;
+    margin-left: 10px;
   }
 }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavBar from "./components/NavBar"
 import Introd from './components/Introd';
 import Project from './components/Project';
+import Timeline from './components/Timeline';
 
 function App() {
   let [status, setStatus] = useState(false);
@@ -15,6 +16,7 @@ function App() {
       <NavBar bgStatus={status} handleBackground={handleStatus}/>
       <Introd bgStatus = {status}/>
       <Project bgStatus = {status}/>
+      <Timeline bgStatus = {status}/>
     </div>
   );
 }
