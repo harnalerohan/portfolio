@@ -3,8 +3,14 @@
   font-weight: 600;
 }
 
+.arrows{
+  margin-top: 3%;
+text-align: center;
+}
+
 .flex-corousel{
   display: flex;
+  box-shadow: -1px -3px 30px #6c63ff;
 }
 
 .left-arrow{
@@ -12,6 +18,7 @@
   text-align: center;
   background-color: transparent;
   border: none;
+  font-size: larger;
 }
 
 .right-arrow{
@@ -19,6 +26,7 @@
   text-align: center;
   background-color: transparent;
   border: none;
+  font-size: larger;
 }
 
 .fa-arrow-left{

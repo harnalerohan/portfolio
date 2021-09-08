@@ -8,6 +8,10 @@
   font-weight: 600;
 }
 
+h5{
+  font-weight: 600;
+}
+
 .timeline:before {
   top: 0;
   bottom: 0;
