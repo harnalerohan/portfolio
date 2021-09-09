@@ -10,6 +10,7 @@ import cityPedia from '../images/cityPedia.png';
 const Project = ({bgStatus}:any) => {
   return (
     <div className="mt-4 container">
+      <i id="projects"/>
       <div className={bgStatus ? "row whiteText" : "row blackText"}>
         <div className="col-12 mb-5">
           <h3 className="one">Things I have developed.</h3>

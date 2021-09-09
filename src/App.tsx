@@ -12,7 +12,7 @@ function App() {
   }
   
   return (
-    <div className={status ? "container-fluid envelopedBlack" : "container-fluid envelope"}>
+    <div className={status ? "envelopedBlack" : "envelope"}>
       <NavBar bgStatus={status} handleBackground={handleStatus}/>
       <Introd bgStatus = {status}/>
       <Project bgStatus = {status}/>
