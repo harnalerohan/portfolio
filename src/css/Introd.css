@@ -1,6 +1,5 @@
 .envelope{
   background-color: white;
-  /* height: auto; */
   margin: 0px auto 0px auto;
   padding: 20px 0px 0px 0px;
   justify-content: space-between;
@@ -9,11 +8,18 @@
 
 .envelopedBlack{
   background-color: #212529;
-  /* height: auto; */
   margin: 0px auto 0px auto;
   padding: 20px 0px 0px 0px;
   justify-content: space-between;
   transition: all 1s ease;
+}
+
+.conButtonsPc{
+  margin-top: 20%;
+}
+
+.conButtons{
+  display: none;
 }
 
 .whiteText{
@@ -26,18 +32,26 @@
   transition: all 1s ease;
 }
 
-.fas{
-  transition: all 10s ease;
-}
 .devGuy img{
   width: 95%;
   padding-top: 6%;
 }
 
+.btn-light{
+  border-radius: 20px !important;
+  width: 12rem;
+}
+
+.btn-dark{
+  margin-left: 30px;
+  border-radius: 20px !important;
+  width: 12rem;
+}
+
 .intro{
   font-family: "poppins", "sans-serif";
   color: black;
-  padding-top: 10%
+  padding-top: 5%
 } 
 
 .intro h3{
@@ -47,7 +61,7 @@
 }
 
 .name{
-  color:#6c63ff;
+  color:#FFD523;
   transition: opacity 1s ease-in
 }
 
@@ -59,13 +73,32 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 768px) {
   .intro {
     text-align: center;
   }
   .description {
     display: none;
   }
+  
+  .btn-light{
+    border-radius: 20px !important;
+  }
+  
+  .btn-dark{
+    margin-left: 0px;
+    border-radius: 20px !important;
+  }
+
+  .conButtonsPc{
+    display: none;
+  }
+
+  .conButtons{
+    display: block;
+    margin-top:8%;
+  }
+
   .intro h3{
     font-size: 20px;
   }

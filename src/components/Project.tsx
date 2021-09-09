@@ -17,6 +17,12 @@ const Project = ({bgStatus}:any) => {
       </div>
       {/* corousel */}
       <div className='flex-corousel'>
+        {/* left button on pc */}
+      <div className="arrowpc">
+        <button className="left-arrow" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <i className="fas fa-arrow-left"></i>
+        </button>
+      </div>
 
         <div id="carouselExampleInterval" className={`carousel carousel-${bgStatus ? `` : `dark`} slide`} data-bs-ride="carousel">
           <div className="carousel-inner">
@@ -47,20 +53,24 @@ const Project = ({bgStatus}:any) => {
             </div>
           </div>
         </div>
+        {/* right button on pc */}
+        <div className="arrowpc">
+          <button className="right-arrow" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <i className="fas fa-arrow-right"></i>
+          </button>
+        </div>
       </div>
-      <div className="arrows">
+
+      {/* arrows for phone */}
+      <div className={`arrowsphone`}>
         <button className="left-arrow" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <i className="fas fa-arrow-left"></i>
+          <i className={`fas fa-arrow-left ${bgStatus ? `whiteText` : `blackText`}`}></i>
         </button>
         <button className="right-arrow" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <i className="fas fa-arrow-right"></i>
+          <i className={`fas fa-arrow-right ${bgStatus ? `whiteText` : `blackText`}`}></i>
         </button>
+        
       </div>
-      {/* <div className="">
-        <button className="right-arrow" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <i className="fas fa-arrow-right"></i>
-        </button>
-      </div> */}
     </div>
   )
 }

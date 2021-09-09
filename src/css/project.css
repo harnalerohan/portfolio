@@ -1,16 +1,20 @@
 .one{
-  /* text-align: left; */
+  text-align: center;
   font-weight: 600;
 }
 
-.arrows{
+.arrowsphone{
   margin-top: 3%;
-text-align: center;
+  text-align: center;
+  display: none;
 }
 
 .flex-corousel{
   display: flex;
-  box-shadow: -1px -3px 30px #6c63ff;
+}
+
+.slide{
+  box-shadow: -3px -3px 1px #6c63ff;
 }
 
 .left-arrow{
@@ -32,22 +36,28 @@ text-align: center;
 .fa-arrow-left{
   font-size: 200%;
   margin-right: 40px;
-  color: #6c63ff;
 }
 
 .fa-arrow-right{
   font-size: 200%;
   margin-left: 40px;
-  color: #6c63ff
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 768px) {
   .one{
     font-size: 20px;
   }
 
+  .arrowsphone{
+    display: block;
+  }
+
   .left-arrow{
     margin-left: 0rem;
+  }
+
+  .arrowpc{
+    display: none;
   }
   
   .right-arrow{

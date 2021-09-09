@@ -35,7 +35,7 @@
   transition: all 1s ease;
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 768px) {
   .fa-moon {
     font-size: 1.4rem;
     margin-right: 30px;

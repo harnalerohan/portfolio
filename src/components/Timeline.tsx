@@ -10,10 +10,10 @@ const Timeline = ({bgStatus}: any) => {
     <ul className={`timeline ${bgStatus ? "whiteText" : "blackText"}`}>
 
         <li>
-          <div className="timeline-badge"><i className="fab fa-node"></i></div>
+          <div className="timeline-badge danger"><i className="fab fa-js-square"></i></div>
           <div className="timeline-panel">
             <div className="timeline-heading">
-              <h5 className={`timeline-title`}>Node.Js</h5>
+              <h5 className="timeline-title">JavaScript</h5>
             </div>
             <div className="timeline-body">
               <p>Mussum ipsum cacilds, vidis litro abertis.</p>
@@ -22,23 +22,22 @@ const Timeline = ({bgStatus}: any) => {
         </li>
 
         <li className="timeline-inverted">
-          <div className="timeline-badge warning"><i className="fas fa-database"></i></div>
+          <div className="timeline-badge danger"><i className="fas fa-code"></i></div>
           <div className="timeline-panel">
             <div className="timeline-heading">
-              <h5 className="timeline-title">DynamoDb</h5>
+              <h5 className="timeline-title">TypeScript</h5>
             </div>
             <div className="timeline-body">
               <p>Mussum ipsum cacilds, vidis litro abertis.</p>
-              <p>Suco de cevadiss, é um leite divinis, qui tem lupuliz.</p>
             </div>
           </div>
         </li>
 
         <li>
-          <div className="timeline-badge danger"><i className="fab fa-js-square"></i></div>
+          <div className="timeline-badge"><i className="fab fa-node"></i></div>
           <div className="timeline-panel">
             <div className="timeline-heading">
-              <h5 className="timeline-title">JavaScript</h5>
+              <h5 className={`timeline-title`}>Node.Js</h5>
             </div>
             <div className="timeline-body">
               <p>Mussum ipsum cacilds, vidis litro abertis.</p>
@@ -61,10 +60,10 @@ const Timeline = ({bgStatus}: any) => {
         </li>
 
         <li>
-          <div className="timeline-badge info"><i className="glyphicon glyphicon-floppy-disk"></i></div>
+          <div className="timeline-badge info"><i className="fas fa-code-branch"></i></div>
           <div className="timeline-panel">
             <div className="timeline-heading">
-              <h5 className="timeline-title">Github & Gitlab</h5>
+              <h5 className="timeline-title">Version Control</h5>
             </div>
             <div className="timeline-body">
               <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.</p>
