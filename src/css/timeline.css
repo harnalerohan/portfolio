@@ -149,6 +149,12 @@ h5{
   color: inherit;
 }
 
+.timeline-body p{
+  color: gray;
+  font-weight: normal;
+  font-size: medium;
+}
+
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0;
