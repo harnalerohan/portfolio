@@ -7,28 +7,28 @@ const Timeline = ({bgStatus}: any) => {
       <div className="page-header mt-4">
         <h3 id="timeline" className={bgStatus ? "whiteText" : "blackText"}>Skills</h3>
       </div>
-    <ul className={`timeline ${bgStatus ? "whiteText" : "blackText"}`}>
+      <ul className={`timeline ${bgStatus ? "whiteText" : "blackText"}`}>
 
         <li>
-          <div className="timeline-badge danger"><i className="fab fa-js-square"></i></div>
+          <div className="timeline-badge"><i className="fab fa-js-square"></i></div>
           <div className="timeline-panel">
             <div className="timeline-heading">
               <h5 className="timeline-title">JavaScript</h5>
             </div>
             <div className="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis.</p>
+              <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages</p>
             </div>
           </div>
         </li>
 
         <li className="timeline-inverted">
-          <div className="timeline-badge danger"><i className="fas fa-code"></i></div>
+          <div className="timeline-badge"><i className="fas fa-code"></i></div>
           <div className="timeline-panel">
             <div className="timeline-heading">
               <h5 className="timeline-title">TypeScript</h5>
             </div>
             <div className="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis.</p>
+              <p>TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor.It Catches errors early in your editor.</p>
             </div>
           </div>
         </li>
@@ -40,13 +40,13 @@ const Timeline = ({bgStatus}: any) => {
               <h5 className={`timeline-title`}>Node.Js</h5>
             </div>
             <div className="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis.</p>
+              <p>It is an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.</p>
             </div>
           </div>
         </li>
 
         <li className="timeline-inverted">
-          <div className="timeline-badge info">
+          <div className="timeline-badge">
           <i className="fab fa-react"></i>
           </div>
           <div className="timeline-panel">
@@ -54,36 +54,23 @@ const Timeline = ({bgStatus}: any) => {
               <h5 className="timeline-title">React</h5>
             </div>
             <div className="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.</p>
+              <p>React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces.</p>
             </div>
           </div>
         </li>
 
         <li>
-          <div className="timeline-badge info"><i className="fas fa-code-branch"></i></div>
+          <div className="timeline-badge"><i className="fas fa-code-branch"></i></div>
           <div className="timeline-panel">
             <div className="timeline-heading">
-              <h5 className="timeline-title">Version Control</h5>
+              <h5 className="timeline-title">Git</h5>
             </div>
             <div className="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.</p>
+              <p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
             </div>
           </div>
         </li>
-
-        <li className="timeline-inverted">
-          <div className="timeline-badge success"><i className="glyphicon glyphicon-thumbs-up"></i></div>
-          <div className="timeline-panel">
-            <div className="timeline-heading">
-              <h5 className="timeline-title">Lorem Ipsum</h5>
-            </div>
-            <div className="timeline-body">
-              <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis.</p>
-            </div>
-          </div>
-        </li>
-
-    </ul>
+      </ul>
     </div>
   )
 }

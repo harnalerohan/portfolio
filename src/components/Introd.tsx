@@ -44,7 +44,9 @@ const Introd = ({ bgStatus }: any) => {
       <div className="devGuy col-lg-6 text-center">
         <img src={logo} alt="devGuy" />
         <div className="conButtons">
-          <button type="button" className="btn btn-light"><i className="fas fa-file-download"></i> Download Resume</button>
+          <a href="https://drive.google.com/file/d/1EHYrf0wVgZzMfq_OJQIId37Jd-rf7xd3/view?usp=sharing" target="_blank" rel="noreferrer">
+            <button type="button" className="btn btn-light"><i className="fas fa-file-download"></i> Download Resume</button>
+          </a>
           <button type="button" className="btn btn-dark">Get a free Quote</button>
       </div>
       </div>
