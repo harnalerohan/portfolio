@@ -12,6 +12,10 @@ h5{
   font-weight: 600;
 }
 
+.darkButton{
+  color: black;
+}
+
 .timeline:before {
   top: 0;
   bottom: 0;
@@ -94,7 +98,7 @@ h5{
   top: 16px;
   left: 50%;
   margin-left: -25px;
-  background-color: #999999;
+  background-color: #343a40;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
