@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../css/Introd.css";
+import "../css/navBar.css";
 import logo from "../images/devGuy.svg";
 
 const Introd = ({ bgStatus }: any) => {
@@ -34,7 +35,7 @@ const Introd = ({ bgStatus }: any) => {
             in web development.
           </p>
         </div>
-        <div className="conButtonsPc">
+        <div className="conButtonsPc link">
           <a href="https://drive.google.com/file/d/1EHYrf0wVgZzMfq_OJQIId37Jd-rf7xd3/view?usp=sharing" target="_blank" rel="noreferrer">
             <button type="button" className="btn btn-light"><i className="fas fa-file-download"></i> Download Resume</button>
           </a>
@@ -47,7 +48,7 @@ const Introd = ({ bgStatus }: any) => {
           <a href="https://drive.google.com/file/d/1EHYrf0wVgZzMfq_OJQIId37Jd-rf7xd3/view?usp=sharing" target="_blank" rel="noreferrer">
             <button type="button" className="btn btn-light"><i className="fas fa-file-download"></i> Download Resume</button>
           </a>
-          <button type="button" className="btn btn-dark">Get a free Quote</button>
+          <button type="button" className="link btn btn-dark">Get a free Quote</button>
       </div>
       </div>
     </div>

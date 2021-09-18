@@ -1,0 +1,15 @@
+#cursor{
+  height: 35px;
+  width: 35px;
+  background: #FFD523;
+  border-radius: 50%;
+  position: absolute;
+  /* display: none; */
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+div :hover ~ #cursor {
+  transform: scale(0.6);
+  background: #6c63ff;
+}

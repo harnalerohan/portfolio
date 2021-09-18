@@ -13,19 +13,19 @@ const Project = ({bgStatus}:any) => {
       <i id="projects"/>
       <div className={bgStatus ? "row whiteText" : "row blackText"}>
         <div className="col-12 mb-5">
-          <h3 className="one">Things I have developed.</h3>
+          <h3 className="subheading">Things I have developed.</h3>
         </div>
       </div>
       {/* corousel */}
       <div className='flex-corousel'>
         {/* left button on pc */}
-      <div className="arrowpc">
+      <div className="arrowpc link">
         <button className="left-arrow" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
           <i className="fas fa-arrow-left"></i>
         </button>
       </div>
 
-        <div id="carouselExampleInterval" className={`carousel carousel-${bgStatus ? `` : `dark`} slide`} data-bs-ride="carousel">
+        <div id="carouselExampleInterval" className={`link carousel carousel-${bgStatus ? `` : `dark`} slide`} data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="2000">
               <a href="https://citypedia.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -55,7 +55,7 @@ const Project = ({bgStatus}:any) => {
           </div>
         </div>
         {/* right button on pc */}
-        <div className="arrowpc">
+        <div className="arrowpc link">
           <button className="right-arrow" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
             <i className="fas fa-arrow-right"></i>
           </button>

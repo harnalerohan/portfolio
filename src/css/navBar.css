@@ -8,6 +8,11 @@
   transition: all 1s ease;
 }
 
+.link{
+  position: relative;
+  z-index: 1;
+}
+
 .fa-moon {
   font-size: x-large;
   margin: 0px;

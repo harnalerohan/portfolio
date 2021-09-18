@@ -1,4 +1,4 @@
-.one{
+.subheading{
   text-align: center;
   font-weight: 600;
 }
@@ -44,7 +44,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .one{
+  .subheading{
     font-size: 20px;
   }
 

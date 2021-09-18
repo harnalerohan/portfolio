@@ -5,10 +5,10 @@ const NavBar = ({bgStatus, handleBackground = (f: any) => f }:any) => {
   return (
     <div className="container">
     <nav className={`ml-auto navbar navbar-expand-lg navbar-${bgStatus ? 'dark transition' : 'light transition'} bg-${bgStatus ? 'dark' : 'light'}`}>
-        <a className="navbar-brand logo" href="/">
+        <a className="navbar-brand logo link" href="/">
           ROHAN
         </a>
-          <span className="nav-link" style={{color: "white"}}> 
+          <span className="link nav-link" style={{color: "white"}}> 
             <i className={bgStatus ? "far fa-sun pt-1" : "far fa-moon pt-1"} onClick={handleBackground}></i>
           </span>
         <button
@@ -20,10 +20,10 @@ const NavBar = ({bgStatus, handleBackground = (f: any) => f }:any) => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon link"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
+          <ul className="link navbar-nav ml-auto">
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#projects">
                 Projects

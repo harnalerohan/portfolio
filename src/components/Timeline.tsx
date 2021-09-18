@@ -5,7 +5,7 @@ const Timeline = ({bgStatus}: any) => {
   return (
     <div className="container">
       <div className="page-header mt-4">
-        <h3 id="timeline" className={bgStatus ? "whiteText" : "blackText"}>Skills</h3>
+        <h3 id="timeline" className={`subheading ${bgStatus ? "whiteText" : "blackText"}`}>Technical Skills</h3>
       </div>
       <ul className={`timeline ${bgStatus ? "whiteText" : "blackText"}`}>
 
