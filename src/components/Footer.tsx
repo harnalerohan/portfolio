@@ -10,7 +10,7 @@ const Footer = ({bgStatus}: any) => {
           <i><i className="fab fabs fa-twitter"></i></i>
           <i><i className="fab fabs fa-instagram"></i></i>
           <i><i className="fab fabs fa-linkedin-in"></i></i>
-          <i><i className="fab fabs medium"></i></i>
+          <i><i className="fab fabs fa-medium"></i></i>
         </div>
       </div>
       <div className="credit">
