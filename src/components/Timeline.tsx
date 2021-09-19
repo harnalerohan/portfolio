@@ -3,12 +3,11 @@ import "../css/timeline.css";
 
 const Timeline = ({bgStatus}: any) => {
   return (
-    <div className="container">
+    <div className={`container`}>
       <div className="page-header mt-4">
         <h3 id="timeline" className={`subheading ${bgStatus ? "whiteText" : "blackText"}`}>Technical Skills</h3>
       </div>
       <ul className={`timeline ${bgStatus ? "whiteText" : "blackText"}`}>
-
         <li>
           <div className="timeline-badge"><i className="fab fa-js-square"></i></div>
           <div className="timeline-panel">

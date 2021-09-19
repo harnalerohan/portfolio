@@ -16,17 +16,15 @@ const Introd = ({ bgStatus }: any) => {
   }, [classs]);
 
   return (
-    <div className="container mb-5">
+    <div className="container">
     <div className={bgStatus ? "row envelopedBlack" : "row envelope"}>
       <div className="intro col-lg-6 text-lg">
         <div className={bgStatus ? "whiteText" : "blackText"}>
-          <p>
+          <p className="welcomeText">
             Welcome to my portfolio...
           </p>
           <h3>
-            <span>
               Hey folks I'm {" "}
-            </span>
             <span className={classs ? "name fadeIn" : "name fadeOut"}>
               {name ? "Rohan Harnale" : "Web Developer"}
             </span>
@@ -39,7 +37,7 @@ const Introd = ({ bgStatus }: any) => {
           <a href="https://drive.google.com/file/d/1EHYrf0wVgZzMfq_OJQIId37Jd-rf7xd3/view?usp=sharing" target="_blank" rel="noreferrer">
             <button type="button" className="btn btn-light"><i className="fas fa-file-download"></i> Download Resume</button>
           </a>
-          <button type="button" className="btn btn-dark">   Get a free Quote   </button>
+          <button type="button" className="btn btn-dark btn-intro">Get a free Quote</button>
         </div>
       </div>
       <div className="devGuy col-lg-6 text-center">
@@ -48,7 +46,7 @@ const Introd = ({ bgStatus }: any) => {
           <a href="https://drive.google.com/file/d/1EHYrf0wVgZzMfq_OJQIId37Jd-rf7xd3/view?usp=sharing" target="_blank" rel="noreferrer">
             <button type="button" className="btn btn-light"><i className="fas fa-file-download"></i> Download Resume</button>
           </a>
-          <button type="button" className="link btn btn-dark">Get a free Quote</button>
+          <button type="button" className="link btn btn-dark btn-intro">Get a free Quote</button>
       </div>
       </div>
     </div>

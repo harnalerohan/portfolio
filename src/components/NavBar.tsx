@@ -30,12 +30,7 @@ const NavBar = ({bgStatus, handleBackground = (f: any) => f }:any) => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">
-                Testemonials
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/"> 
+              <a className="nav-link" href="#contact"> 
                 Contact Me
               </a>
             </li>

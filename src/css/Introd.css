@@ -32,6 +32,10 @@
   transition: all 1s ease;
 }
 
+.welcomeText{
+  /* margin-bottom: 3rem; */
+}
+
 .devGuy img{
   width: 95%;
   padding-top: 6%;
@@ -42,7 +46,7 @@
   width: 12rem;
 }
 
-.btn-dark{
+.btn-intro{
   margin-left: 30px;
   border-radius: 20px !important;
   width: 12rem;
@@ -76,6 +80,7 @@
 @media screen and (max-width: 768px) {
   .intro {
     text-align: center;
+    padding-top: 2%
   }
   .description {
     display: none;
@@ -85,9 +90,9 @@
     border-radius: 20px !important;
   }
   
-  .btn-dark{
+  .btn-intro{
     margin-left: 0px;
-    margin: 16px;
+    margin: 16px 16px 0px 16px;
     border-radius: 20px !important;
   }
 
@@ -97,7 +102,7 @@
 
   .conButtons{
     display: block;
-    margin-top:8%;
+    margin-top: 8%;
   }
 
   .intro h3{
@@ -105,6 +110,6 @@
   }
   .devGuy img{
     width: 95%;
-    padding-top: 10%;
+    padding-top: 8%;
   }
 }

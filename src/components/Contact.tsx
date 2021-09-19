@@ -1,53 +1,51 @@
 import React from 'react';
 import "../css/contact.css"
+import contact from "../images/contact.svg";
 
 
 const Contact = ({bgStatus}:any) => {
   return (
-    <div className={`${bgStatus ? "whiteText" : "blackText"}`}>
-      <h3 className="subheading">Intrested in working together?</h3>
-      <div className="background">
-  <div className="container">
-    <div className="screen">
-      <div className="screen-header">
-        <div className="screen-header-left">
-          <div className="screen-header-button close"></div>
-          <div className="screen-header-button maximize"></div>
-          <div className="screen-header-button minimize"></div>
+    <div className="container mb-5">
+    <i id="contact"/>
+    <div className={bgStatus ? "row envelopedBlack whiteText" : "row envelope blackText"}>
+      <div className="devGuy col-lg-6">
+        <div className="phoneText text-center page-header">
+          <h3 className="subheading">
+            Intrested to work together?
+            <br/>
+            Get in touch.
+          </h3>
         </div>
+        <img src={contact} alt="contact" />
       </div>
-      <div className="screen-body">
-        <div className="screen-body-item left">
-          <div className="app-title">
-            <span>CONTACT</span>
-            <span>ME</span>
-          </div>
-          <div className="app-contact">CONTACT INFO : +91 955 247 1965</div>
+      <div className="col-lg-6 text-lg">
+        <div className="pcText page-header">
+          <h3>
+            Intrested to work together?
+            <br/>
+            Get in touch.
+          </h3>
+          <br/>
         </div>
-        <div className="screen-body-item">
-          <div className="app-form">
-            <div className="app-form-group">
-              <input className="app-form-control" placeholder="NAME" value=""/>
-            </div>
-            <div className="app-form-group">
-              <input className="app-form-control" placeholder="EMAIL"/>
-            </div>
-            <div className="app-form-group">
-              <input className="app-form-control" placeholder="CONTACT NO"/>
-            </div>
-            <div className="app-form-group message">
-              <input className="app-form-control" placeholder="MESSAGE"/>
-            </div>
-            <div className="app-form-group buttons">
-              <button className="app-form-button">CANCEL</button><span> </span>
-              <button className="app-form-button">SEND</button>
-            </div>
+        {/* form */}
+        <form className="contactForm link">
+          <div className="form-group">
+            <label>Full Name</label>
+            <input type="text" className="form-control" placeholder="Enter Name"/>
           </div>
-        </div>
+          <div className="form-group">
+            <label>Email address</label>
+            <input type="email" className="form-control" placeholder="Enter email"/>
+            <small id="emailHelp" className="form-text text-muted">I'll never share your email with anyone else.</small>
+          </div>
+          <div className="form-group">
+            <label>Message</label>
+            <textarea className="form-control" rows={3}></textarea>
+          </div>
+          <button type="submit" className="btn btn-dark">Submit</button>
+        </form>
       </div>
     </div>
-  </div>
-</div>
     </div>
   )
 }

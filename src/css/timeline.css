@@ -145,7 +145,7 @@ h5{
 }
 
 .timeline-body > p + p {
-  margin-top: 5px;
+  margin-top: 1px;
 }
 
 @media (max-width: 768px) {
@@ -156,6 +156,12 @@ h5{
 
   ul.timeline:before {
     left: 40px;
+  }
+
+  .timeline-body p{
+    color: gray;
+    font-weight: normal;
+    font-size: smaller;
   }
 
   ul.timeline > li > .timeline-panel {

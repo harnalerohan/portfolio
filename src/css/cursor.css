@@ -13,3 +13,9 @@ div :hover ~ #cursor {
   transform: scale(0.6);
   background: #6c63ff;
 }
+
+@media screen and (max-width: 700px) {
+  #cursor{
+    display: none;
+  }
+}
