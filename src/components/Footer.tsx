@@ -12,6 +12,7 @@ const Footer = ({bgStatus}: any) => {
           <a href="https://www.linkedin.com/in/rohan-harnale/" target="_blank" rel="noreferrer"><i className="fab fabs fa-linkedin-in"></i></a>
           <a href="https://github.com/harnalerohan" target="_blank" rel="noreferrer"><i className="fab fabs fa-github"></i></a>
           <a href="https://stackoverflow.com/users/14046979/rohan" target="_blank" rel="noreferrer"><i className="fab fabs fa-stack-overflow"></i></a>
+          <a href="https://stackoverflow.com/users/14046979/rohan" target="_blank" rel="noreferrer"><i className="fab fabs fa-medium"></i></a>
         </div>
       </div>
       <div className="credit">
