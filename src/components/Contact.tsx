@@ -42,7 +42,9 @@ const Contact = ({bgStatus}:any) => {
             <label>Message</label>
             <textarea className="form-control" rows={3}></textarea>
           </div>
-          <button type="submit" className="btn btn-dark">Submit</button>
+          <div className="btn-div">
+          <button type="submit" className="btn btn-dark contact-button">Submit</button>
+          </div>
         </form>
       </div>
     </div>

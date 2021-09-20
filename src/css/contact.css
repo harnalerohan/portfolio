@@ -2,8 +2,9 @@
   display: none;
 }
 
-.btn-dark-contact{
-  background-color: white;
+.contact-button{
+  border-radius: 20px !important;
+  width: 12rem;
 }
 
 @media screen and (max-width: 520px) {
@@ -25,5 +26,15 @@
 
   .pcText{
     display: none;
+  }
+
+  .contact-button{
+    border-radius: 20px !important;
+    width: 12rem;
+    /* margin: auto 0px auto 0px; */
+  }
+
+  .btn-div{
+    text-align: center;
   }
 }
