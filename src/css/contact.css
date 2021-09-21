@@ -2,6 +2,12 @@
   display: none;
 }
 
+.notification{
+  transition: all 1s ease;
+  font-size: 2rem;
+  color: #FFD523;
+}
+
 .contact-button{
   border-radius: 20px !important;
   width: 12rem;
