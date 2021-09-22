@@ -35,7 +35,7 @@ const Contact = ({bgStatus}:any) => {
       subject: formData.subject
     };
 
-    axios.post('http://localhost:5000/app/sendmail', userData)
+    axios.post('https://shielded-refuge-62729.herokuapp.com/app/sendmail', userData)
       .then(result => {
         console.log("results", result)
         if(result.status === 200){
@@ -81,26 +81,26 @@ const Contact = ({bgStatus}:any) => {
           <br/>
         </div>
         {/* form */}
-        <form className="contactForm link">
+        <form onSubmit={sendMessage} className="contactForm link">
           <div className="form-group">
             <label>Full Name</label>
-            <input name="name" value={formData.name} onChange={onChange} type="text" className="form-control" placeholder="Enter Name"/>
+            <input required={true} name="name" value={formData.name} onChange={onChange} type="text" className="form-control" placeholder="Enter Name"/>
           </div>
           <div className="form-group">
             <label>Email address</label>
-            <input name="email" value={formData.email} onChange={onChange} type="email" className="form-control" placeholder="Enter email"/>
+            <input name="email" value={formData.email} onChange={onChange} type="email" className="form-control" placeholder="Enter email" required/>
             <small id="emailHelp" className="form-text text-muted">I'll never share your email with anyone else.</small>
           </div>
           <div className="form-group">
             <label>Subject</label>
-            <input name="subject" value={formData.subject} onChange={onChange} type="text" className="form-control" placeholder="Enter Subject"/>
+            <input name="subject" value={formData.subject} onChange={onChange} type="text" className="form-control" placeholder="Enter Subject" required/>
           </div>
           <div className="form-group">
             <label>Message</label>
-            <textarea name="message" value={formData.message} onChange={onChange} className="form-control" rows={2}></textarea>
+            <textarea name="message" value={formData.message} onChange={onChange} className="form-control" rows={2} required></textarea>
           </div>
           <div className="col-6 btn-div">
-            <button onClick={sendMessage} type="submit" className="btn btn-dark contact-button">Submit</button>
+            <button type="submit" className="btn btn-dark contact-button">Submit</button>
           </div>
           <div style={status === 1 ? {display: "block"} : {display : "none"}} className={"spinner-border"} role="status">
             <span className="sr-only">Loading...</span>
