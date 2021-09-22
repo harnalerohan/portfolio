@@ -26,22 +26,49 @@ const Contact = ({bgStatus}:any) => {
   }
 
   const sendMessage = (e: any) => {
+    // eslint-disable-next-line
+    const localUrl = 'http://localhost:5000/app/sendmail';
+    // eslint-disable-next-line
+    const deployedUrl = 'https://shielded-refuge-62729.herokuapp.com/app/sendmail';
     e.preventDefault();
     setStatus(1);
-    let userData={
+    let userData : any ={
       name:formData.name,
       email: formData.email,
       message: `Message: ${formData.message} | Email: ${formData.email}`,
       subject: formData.subject
     };
 
-    axios.post('https://shielded-refuge-62729.herokuapp.com/app/sendmail', userData)
+    axios.post(deployedUrl, userData)
       .then(result => {
-        console.log("results", result)
         if(result.status === 200){
-          // setLoading(false);
+          //success          
           setStatus(2);
+          //send reply from my side
+          // userData.email = "harnalerohan@gmail.com"
+          userData.subject = "Thanks For Getting In Touch With Me."
+          userData.message = `Hello ${userData.name}, 
+Thank you for reaching me out, I have recieved your query and I will respond you back as soon as possible.
+
+Thanks & Regards,
+Rohan Harnale,
+
+rohanharnale.com`
+          userData.name = "Rohan Harnale"
+          userData["to"] = userData.email
+
+          axios.post(deployedUrl, userData)
+            .then(secondResult => {
+              if(secondResult.status === 200){
+                console.log("Response sent")
+              }else{
+                console.log("Failed to send response");
+              }
+            }).catch(err => {
+              console.log("Failed to send response")
+            })
         }else{
+          //error
           setStatus(3)
         }
         setTimeout(() => {
@@ -99,15 +126,15 @@ const Contact = ({bgStatus}:any) => {
             <label>Message</label>
             <textarea name="message" value={formData.message} onChange={onChange} className="form-control" rows={2} required></textarea>
           </div>
-          <div className="col-6 btn-div">
             <button type="submit" className="btn btn-dark contact-button">Submit</button>
-          </div>
-          <div style={status === 1 ? {display: "block"} : {display : "none"}} className={"spinner-border"} role="status">
-            <span className="sr-only">Loading...</span>
-          </div>
-          <div className="col-6">
-            <i className={status === 2 ? "notification fas fa-check" : status === 3 ?  "notification fas fa-times" : ""}></i>
-          </div>
+            <div className="status">
+              <div style={status === 1 ? {display: "block"} : {display : "none"}} className={"status spinner-border"} role="status">
+                <span className="sr-only">Loading...</span>
+              </div>
+              <div>
+                <i className={status === 2 ? "status notification fas fa-check" : status === 3 ?  "status notification fas fa-times" : ""}></i>
+              </div>
+            </div>
         </form>
       </div>
     </div>

@@ -2,6 +2,10 @@
   display: none;
 }
 
+.status{
+  float: right;
+}
+
 .notification{
   transition: all 1s ease;
   font-size: 2rem;
@@ -41,6 +45,6 @@
   }
 
   .btn-div{
-    text-align: center;
+    /* text-align: center; */
   }
 }
