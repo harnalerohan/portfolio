@@ -15,6 +15,8 @@ const Introd = ({ bgStatus }: any) => {
     // eslint-disable-next-line
   }, [classs]);
 
+  document.getElementsByTagName("meta")[2].content = bgStatus ? "#212529" : "#FFF"
+
   return (
     <div className="container">
     <div className={bgStatus ? "row envelopedBlack" : "row envelope"}>
