@@ -6,6 +6,7 @@ const Footer = ({bgStatus}: any) => {
     <div className = {`footer ${bgStatus ? "whiteText" : "blackText"}`}>
       <div className={`bg-custom mt-5 pb-4`}>
         <div className = {`link text-center ${bgStatus ? "whiteText" : "blackText"}`}>
+          <a href="https://trailblazer.me/id/rohanharnale" target="_blank" rel="noreferrer"><i className="fab fabs fa-salesforce"></i></a>
           <a href="https://www.facebook.com/Harnalerohan/" target="_blank" rel="noreferrer"><i className="fab fabs fa-facebook-f"></i></a>
           <a href="https://twitter.com/rohan_harnale" target="_blank" rel="noreferrer"><i className="fab fabs fa-twitter"></i></a>
           <a href="https://www.instagram.com/heisrohan/" target="_blank" rel="noreferrer"><i className="fab fabs fa-instagram"></i></a>

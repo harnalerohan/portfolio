@@ -1,14 +1,14 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-.transition{
+.transition {
   transition: all 1s ease;
 }
 
-.link{
+.link {
   position: relative;
   z-index: 1;
 }
@@ -36,7 +36,7 @@
   font-weight: 600;
 }
 
-.nav-link{
+.nav-link {
   transition: all 1s ease;
 }
 

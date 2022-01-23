@@ -4,13 +4,19 @@ import "../css/navBar.css";
 import logo from "../images/devGuy.svg";
 
 const Introd = ({ bgStatus }: any) => {
-  let [name, setName] = useState(true);
+  let [name, setName] = useState(1);
   let [classs, setclasss] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
       setclasss(!classs);
-      setName(!name);
+        if(name === 1){
+          setName(2);
+        }else if(name === 2){
+          setName(3);
+        }else if(name === 3){
+          setName(1);
+        }
     }, 2000);
     // eslint-disable-next-line
   }, [classs]);
@@ -28,7 +34,7 @@ const Introd = ({ bgStatus }: any) => {
           <h3>
               Hey folks I'm {" "}
             <span className={classs ? "name fadeIn" : "name fadeOut"}>
-              {name ? "Rohan Harnale" : "Web Developer"}
+              {name === 1 ? "Rohan Harnale" : name === 2 ? "Web Developer" : "Salesforce developer"}
             </span>
           </h3>
           <p className="description">Building a succesful product is a challenge, I am highly energetic
