@@ -27,16 +27,17 @@ const Contact = ({bgStatus}:any) => {
 
   const sendMessage = (e: any) => {
     // eslint-disable-next-line
-    const localUrl = 'http://localhost:5000/app/sendmail';
+    const localUrl = 'http://localhost:3000/app/sendmail';
     // eslint-disable-next-line
     const deployedUrl = 'https://shielded-refuge-62729.herokuapp.com/app/sendmail';
     e.preventDefault();
     setStatus(1);
     let userData : any ={
-      name:formData.name,
-      email: formData.email,
-      message: `Message: ${formData.message} | Email: ${formData.email}`,
-      subject: formData.subject
+      subject: formData.subject,
+      message: `
+        Email: ${formData.email}, 
+        Name: ${formData.name}, 
+        Message: ${formData.message}`,
     };
 
     axios.post(deployedUrl, userData)
@@ -44,29 +45,6 @@ const Contact = ({bgStatus}:any) => {
         if(result.status === 200){
           //success          
           setStatus(2);
-          //send reply from my side
-          // userData.email = "harnalerohan@gmail.com"
-          userData.subject = "Thanks For Getting In Touch With Me."
-          userData.message = `Hello ${userData.name}, 
-Thank you for reaching me out, I have recieved your query and I will respond you back as soon as possible.
-
-Thanks & Regards,
-Rohan Harnale,
-
-rohanharnale.com`
-          userData.name = "Rohan Harnale"
-          userData["to"] = userData.email
-
-          axios.post(deployedUrl, userData)
-            .then(secondResult => {
-              if(secondResult.status === 200){
-                console.log("Response sent")
-              }else{
-                console.log("Failed to send response");
-              }
-            }).catch(err => {
-              console.log("Failed to send response")
-            })
         }else{
           //error
           setStatus(3)
