@@ -51,11 +51,13 @@ const Contact = ({bgStatus}:any) => {
         }
         setTimeout(() => {
           setStatus(0);
+          setFormData(initializeForm);
         }, 2000);
       }).catch(e => {
         setStatus(3);
         setTimeout(() => {
           setStatus(0);
+          setFormData(initializeForm);
         }, 2000);
         console.log("error", e)
       })
