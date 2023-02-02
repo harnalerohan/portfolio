@@ -29,7 +29,7 @@ const Contact = ({bgStatus}:any) => {
     // eslint-disable-next-line
     const localUrl = 'http://localhost:3000/app/sendmail';
     // eslint-disable-next-line
-    const deployedUrl = 'https://shielded-refuge-62729.herokuapp.com/app/sendmail';
+    const deployedUrl = 'https://gmail-api.herokuapp.com/app/sendmail';
     e.preventDefault();
     setStatus(1);
     let userData : any ={
