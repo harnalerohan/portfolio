@@ -42,16 +42,16 @@ const Introd = ({ bgStatus }: any) => {
           </p>
         </div>
         <div className="conButtonsPc link">
-          <a href="https://drive.google.com/file/d/1EHYrf0wVgZzMfq_OJQIId37Jd-rf7xd3/view?usp=sharing" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/1wLMlikmUFehZGV-zJCMG7rVOnC1b4Bud/view?usp=share_link" target="_blank" rel="noreferrer">
             <button type="button" className="btn btn-light"><i className="fas fa-file-download"></i> Download Resume</button>
           </a>
-          <button type="button" className="btn btn-dark btn-intro">Get a free Quote</button>
+          <button disabled type="button" className="btn btn-dark btn-intro">Get a free Quote</button>
         </div>
       </div>
       <div className="devGuy col-lg-6 text-center">
         <img src={logo} alt="devGuy" />
         <div className="conButtons">
-          <a href="https://drive.google.com/file/d/1EHYrf0wVgZzMfq_OJQIId37Jd-rf7xd3/view?usp=sharing" target="_blank" rel="noreferrer">
+          <a href="https://drive.google.com/file/d/1wLMlikmUFehZGV-zJCMG7rVOnC1b4Bud/view?usp=share_link" target="_blank" rel="noreferrer">
             <button type="button" className="btn btn-light"><i className="fas fa-file-download"></i> Download Resume</button>
           </a>
           <button type="button" className="link btn btn-dark btn-intro">Get a free Quote</button>

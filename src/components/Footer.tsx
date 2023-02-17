@@ -9,11 +9,11 @@ const Footer = ({bgStatus}: any) => {
           <a href="https://trailblazer.me/id/rohanharnale" target="_blank" rel="noreferrer"><i className="fab fabs fa-salesforce"></i></a>
           <a href="https://www.facebook.com/Harnalerohan/" target="_blank" rel="noreferrer"><i className="fab fabs fa-facebook-f"></i></a>
           <a href="https://twitter.com/rohan_harnale" target="_blank" rel="noreferrer"><i className="fab fabs fa-twitter"></i></a>
-          <a href="https://www.instagram.com/heisrohan/" target="_blank" rel="noreferrer"><i className="fab fabs fa-instagram"></i></a>
+          <a href="https://www.instagram.com/rohan.harnale/" target="_blank" rel="noreferrer"><i className="fab fabs fa-instagram"></i></a>
           <a href="https://www.linkedin.com/in/rohan-harnale/" target="_blank" rel="noreferrer"><i className="fab fabs fa-linkedin-in"></i></a>
           <a href="https://github.com/harnalerohan" target="_blank" rel="noreferrer"><i className="fab fabs fa-github"></i></a>
           <a href="https://stackoverflow.com/users/14046979/rohan" target="_blank" rel="noreferrer"><i className="fab fabs fa-stack-overflow"></i></a>
-          <a href="https://stackoverflow.com/users/14046979/rohan" target="_blank" rel="noreferrer"><i className="fab fabs fa-medium"></i></a>
+          <a href="https://medium.com/@harnalerohan" target="_blank" rel="noreferrer"><i className="fab fabs fa-medium"></i></a>
         </div>
       </div>
       <div className="credit">

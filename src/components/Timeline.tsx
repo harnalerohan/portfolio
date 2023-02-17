@@ -21,13 +21,13 @@ const Timeline = ({bgStatus}: any) => {
         </li>
 
         <li className="timeline-inverted">
-          <div className="timeline-badge"><i className="fas fa-code"></i></div>
+          <div className="timeline-badge"><i className="fab fa-angular"></i></div>
           <div className="timeline-panel">
             <div className="timeline-heading">
-              <h5 className="timeline-title">TypeScript</h5>
+              <h5 className="timeline-title">Angular</h5>
             </div>
             <div className="timeline-body">
-              <p>TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor.It Catches errors early in your editor.</p>
+              <p>Angular is a platform for building mobile and desktop web applications.</p>
             </div>
           </div>
         </li>
