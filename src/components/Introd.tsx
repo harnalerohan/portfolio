@@ -1,63 +1,57 @@
-import React, { useEffect, useState } from "react";
 import "../css/Introd.css";
 import "../css/navBar.css";
 import logo from "../images/devGuy.svg";
+import WhoAMI from "./WhoAmI";
 
 const Introd = ({ bgStatus }: any) => {
-  let [name, setName] = useState(1);
-  let [classs, setclasss] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setclasss(!classs);
-        if(name === 1){
-          setName(2);
-        }else if(name === 2){
-          setName(3);
-        }else if(name === 3){
-          setName(1);
-        }
-    }, 2000);
-    // eslint-disable-next-line
-  }, [classs]);
-
-  document.getElementsByTagName("meta")[2].content = bgStatus ? "#212529" : "#FFF"
-
+  document.getElementsByTagName("meta")[2].content = bgStatus
+    ? "#212529"
+    : "#FFF";
   return (
     <div className="container">
-    <div className={bgStatus ? "row envelopedBlack" : "row envelope"}>
-      <div className="intro col-lg-6 text-lg">
-        <div className={bgStatus ? "whiteText" : "blackText"}>
-          <p className="welcomeText">
-            Welcome to my portfolio...
-          </p>
-          <h3>
-              Hey folks I'm {" "}
-            <span className={classs ? "name fadeIn" : "name fadeOut"}>
-              {name === 1 ? "Rohan Harnale" : name === 2 ? "Web Developer" : "Salesforce developer"}
-            </span>
-          </h3>
-          <p className="description">Building a succesful product is a challenge, I am highly energetic
-            in web development.
-          </p>
+      <div className={bgStatus ? "row envelopedBlack" : "row envelope"}>
+        <div className="intro col-lg-6 text-lg">
+          <div className={bgStatus ? "whiteText" : "blackText"}>
+            <p className="welcomeText">Welcome to my portfolio...</p>
+            <WhoAMI></WhoAMI>
+            <p className="description">
+              Building a succesful product is a challenge, I am highly energetic
+              in web development.
+            </p>
+          </div>
+          <div className="conButtonsPc link">
+            <a
+              href={process.env.REACT_APP_CVLINK}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button type="button" className="btn btn-light">
+                <i className="fas fa-file-download"></i> Download Resume
+              </button>
+            </a>
+            <button disabled type="button" className="btn btn-dark btn-intro">
+              Get a free Quote
+            </button>
+          </div>
         </div>
-        <div className="conButtonsPc link">
-          <a href="https://drive.google.com/file/d/1wLMlikmUFehZGV-zJCMG7rVOnC1b4Bud/view?usp=share_link" target="_blank" rel="noreferrer">
-            <button type="button" className="btn btn-light"><i className="fas fa-file-download"></i> Download Resume</button>
-          </a>
-          <button disabled type="button" className="btn btn-dark btn-intro">Get a free Quote</button>
+        <div className="devGuy col-lg-6 text-center">
+          <img src={logo} alt="devGuy" />
+          <div className="conButtons">
+            <a
+              href={process.env.REACT_APP_CVLINK}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button type="button" className="btn btn-light">
+                <i className="fas fa-file-download"></i> Download Resume
+              </button>
+            </a>
+            <button type="button" className="link btn btn-dark btn-intro">
+              Get a free Quote
+            </button>
+          </div>
         </div>
       </div>
-      <div className="devGuy col-lg-6 text-center">
-        <img src={logo} alt="devGuy" />
-        <div className="conButtons">
-          <a href="https://drive.google.com/file/d/1wLMlikmUFehZGV-zJCMG7rVOnC1b4Bud/view?usp=share_link" target="_blank" rel="noreferrer">
-            <button type="button" className="btn btn-light"><i className="fas fa-file-download"></i> Download Resume</button>
-          </a>
-          <button type="button" className="link btn btn-dark btn-intro">Get a free Quote</button>
-      </div>
-      </div>
-    </div>
     </div>
   );
 };
