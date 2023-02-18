@@ -46,7 +46,7 @@ const Introd = ({ bgStatus }: any) => {
                 <i className="fas fa-file-download"></i> Download Resume
               </button>
             </a>
-            <button type="button" className="link btn btn-dark btn-intro">
+            <button disabled type="button" className="link btn btn-dark btn-intro">
               Get a free Quote
             </button>
           </div>
