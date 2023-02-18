@@ -43,7 +43,7 @@ const Project = ({bgStatus}:any) => {
               </a>
             </div>
             <div className="carousel-item" data-bs-interval="10000">
-              <a href="https://redecormyhome.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://redecormyhome.in/" target="_blank" rel="noopener noreferrer">
                 <img src={rdcr} className="d-block w-100" alt="redecormyhome.png"/>
               </a>
             </div>
