@@ -27,7 +27,7 @@ const Contact = ({bgStatus}:any) => {
 
   const sendMessage = (e: any) => {
     // eslint-disable-next-line
-    const localUrl = 'http://localhost:3000/app/sendmail';
+    // const localUrl = 'http://localhost:3000/app/sendmail';
     // eslint-disable-next-line
     const deployedUrl = 'https://gmail-api.herokuapp.com/app/sendmail';
     e.preventDefault();
